@@ -12,7 +12,7 @@ class TTextTheme {
     ),
     headlineMedium: const TextStyle().copyWith(
       fontSize: 24,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w800,
       color: Colors.black,
     ),
     headlineSmall: const TextStyle().copyWith(
@@ -71,7 +71,7 @@ class TTextTheme {
     ),
     headlineMedium: const TextStyle().copyWith(
       fontSize: 24,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w800,
       color: Colors.white,
     ),
     headlineSmall: const TextStyle().copyWith(
