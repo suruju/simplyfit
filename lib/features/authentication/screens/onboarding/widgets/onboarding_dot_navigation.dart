@@ -17,6 +17,7 @@ class OnBoardingDotNavigation extends StatelessWidget {
     final dark = THelperFuctions.isDarkMode(context);
     return Positioned(
       bottom: TDeviceUtils.getBottomNavigationBarHeight() + 25,
+      left: TSizes.defaultSpace,
       child: SmoothPageIndicator(
         controller: controller.pageController,
         count: 3,
@@ -24,7 +25,6 @@ class OnBoardingDotNavigation extends StatelessWidget {
         effect: ExpandingDotsEffect(
             dotHeight: 6, activeDotColor: dark ? TColors.white : TColors.dark),
       ),
-      left: TSizes.defaultSpace,
     );
   }
 }

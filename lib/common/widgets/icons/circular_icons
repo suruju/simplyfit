@@ -1,0 +1,44 @@
+import 'package:flutter/material.dart';
+import 'package:getfit/utils/constants/colors.dart';
+import 'package:getfit/utils/helpers/helper_functions.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:getfit/utils/constants/sizes.dart';
+
+class CircularIcon extends StatelessWidget {
+  final Color? iconColor, bgColor;
+  final double? size, width, height;
+  final IconData icon;
+  final VoidCallback? onPressed;
+
+  const CircularIcon({
+    super.key,
+    this.iconColor,
+    this.bgColor,
+    this.size = TSizes.lg,
+    this.width,
+    this.height,
+    required this.icon,
+    this.onPressed,
+    
+  });
+
+ 
+
+  @override
+  Widget build(BuildContext context) {
+    final dark = THelperFuctions.isDarkMode(context);
+    return Container(
+      width: width,
+      height: height,
+
+      decoration: BoxDecoration(
+        color: bgColor!= null? bgColor!: dark
+            ? TColors.black.withOpacity(0.9)
+            : TColors.white.withOpacity(0.9),
+        borderRadius: BorderRadius.circular(100),
+      ),
+      child: IconButton(
+          onPressed: onPressed, icon: Icon(icon, color: iconColor, size: size)),
+    );
+  }
+}

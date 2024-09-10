@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:getfit/common/widgets/custom_shapes/container/home_header_container.dart';
 import 'package:getfit/common/widgets/custom_shapes/container/search_container.dart';
+import 'package:getfit/common/widgets/layouts/grid_layout.dart';
+import 'package:getfit/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:getfit/common/widgets/text/section_heading.dart';
 import 'package:getfit/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:getfit/features/shop/screens/home/widgets/home_categories.dart';
@@ -14,11 +16,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
-            HomeHeaderContainer(
+            const HomeHeaderContainer(
               child: Column(
                 children: [
                   HomeAppBar(),
@@ -49,13 +51,20 @@ class HomeScreen extends StatelessWidget {
             ),
 
             ///Body section
-            Padding(
-                padding: EdgeInsets.all(TSizes.defaultSpace),
-                child: PromoSlider(banners: [
+            const Padding(
+              padding: EdgeInsets.all(TSizes.defaultSpace),
+              child: PromoSlider(
+                banners: [
                   TImages.promoBanner1,
                   TImages.promoBanner2,
                   TImages.promoBanner3
-                ]))
+                ],
+              ),
+            ),
+            GridViewLayout(
+                itemCount: 6,
+                itemBuilder: (_, index) => const ProductCardVertical()),
+            // ProductCardVertical(),
           ],
         ),
       ),

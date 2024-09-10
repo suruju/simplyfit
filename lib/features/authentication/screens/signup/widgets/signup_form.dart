@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getfit/features/authentication/screens/signup/verify_email.dart';
 import 'package:getfit/features/authentication/screens/signup/widgets/termsandcondition.dart';
-import 'package:getfit/utils/constants/colors.dart';
 import 'package:getfit/utils/constants/sizes.dart';
 import 'package:getfit/utils/constants/text_strings.dart';
 import 'package:iconsax/iconsax.dart';
@@ -97,7 +96,7 @@ class SignUpForm extends StatelessWidget {
               onPressed: () {
                 Get.to(() => const VerifyEmail());
               },
-              child: Text(TTexts.createAccount),
+              child: const Text(TTexts.createAccount),
             ),
           ),
         ],

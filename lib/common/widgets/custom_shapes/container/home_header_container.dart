@@ -20,8 +20,8 @@ class HomeHeaderContainer extends StatelessWidget {
         ///If [size.isFinite is note true in stack ] then it will not work properly so wrap the stack with sized box with fixed height value
         child: Stack(
           children: [
-            Positioned(top: -150, right: -250, child: CircularShape()),
-            Positioned(top: 100, right: -300, child: CircularShape()),
+            const Positioned(top: -150, right: -250, child: CircularShape()),
+            const Positioned(top: 100, right: -300, child: CircularShape()),
             child,
           ],
         ),

@@ -35,7 +35,18 @@ class TImages {
   static const String electronicsIcon =
       "assets/icons/categories/icons8-smartphone-64.png";
 
+//PROMO BANNERS
   static const String promoBanner1 = "assets/images/banners/banner_1.jpg";
   static const String promoBanner2 = "assets/images/banners/banner_2.jpg";
   static const String promoBanner3 = "assets/images/banners/banner_3.jpg";
+
+//PRODUCT IMAGES
+  static const String product1 = "assets/images/products/nike-shoes.png";
+  static const String product2 = "assets/images/products/product-jacket.png";
+  static const String product3 = "assets/images/products/product-slippers.png";
+  static const String product4 = "assets/images/products/samsung_s9_mobile.png";
+  static const String product5 = "assets/images/products/product-1.png";
+  static const String product6 = "assets/images/products/office_desk1.png";
+  static const String product7 = "assets/images/products/NikeAirMax.png";
+  static const String product8 = "assets/images/products/leather_jacket_1.png";
 }
