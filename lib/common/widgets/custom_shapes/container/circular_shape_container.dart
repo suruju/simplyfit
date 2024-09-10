@@ -8,6 +8,7 @@ class CircularShape extends StatelessWidget {
   final double opacity;
   final Color bgColor;
   final double padding;
+  final EdgeInsets? margin;
   final Widget? child;
   const CircularShape({
     super.key,
@@ -18,6 +19,7 @@ class CircularShape extends StatelessWidget {
     this.opacity = 0.1,
     this.bgColor = TColors.white,
     this.child,
+    this.margin,
   });
 
   @override
@@ -25,6 +27,7 @@ class CircularShape extends StatelessWidget {
     return Container(
       width: width,
       height: height,
+      margin: margin,
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),

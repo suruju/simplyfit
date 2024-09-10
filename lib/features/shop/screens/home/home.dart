@@ -4,7 +4,9 @@ import 'package:getfit/common/widgets/custom_shapes/container/search_container.d
 import 'package:getfit/common/widgets/text/section_heading.dart';
 import 'package:getfit/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:getfit/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:getfit/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:getfit/utils/constants/colors.dart';
+import 'package:getfit/utils/constants/image_strings.dart';
 import 'package:getfit/utils/constants/sizes.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -45,6 +47,15 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+
+            ///Body section
+            Padding(
+                padding: EdgeInsets.all(TSizes.defaultSpace),
+                child: PromoSlider(banners: [
+                  TImages.promoBanner1,
+                  TImages.promoBanner2,
+                  TImages.promoBanner3
+                ]))
           ],
         ),
       ),
