@@ -61,6 +61,13 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
+              child: SectionHeading(
+                text: 'Popular Products',
+                textColor: TColors.black,
+              ),
+            ),
             GridViewLayout(
                 itemCount: 6,
                 itemBuilder: (_, index) => const ProductCardVertical()),

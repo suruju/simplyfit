@@ -9,7 +9,7 @@ class SectionHeading extends StatelessWidget {
   const SectionHeading({
     super.key,
     required this.text,
-    this.viewAllText = 'View All',
+    this.viewAllText = 'View all',
     this.showViewAll = true,
     this.onPressed,
     this.textColor,
@@ -18,6 +18,7 @@ class SectionHeading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(text,
             style: Theme.of(context)

@@ -3,6 +3,7 @@ import 'package:getfit/common/styles/shadows.dart';
 import 'package:getfit/common/widgets/custom_shapes/container/rounded_container.dart';
 import 'package:getfit/common/widgets/icons/circular_icons';
 import 'package:getfit/common/widgets/images/rounded_image.dart';
+import 'package:getfit/common/widgets/text/text_verified_icon.dart';
 import 'package:getfit/common/widgets/texts/product_price_text.dart';
 import 'package:getfit/common/widgets/texts/product_title_text.dart';
 import 'package:getfit/utils/constants/colors.dart';
@@ -74,58 +75,49 @@ class ProductCardVertical extends StatelessWidget {
               const SizedBox(height: TSizes.spaceBtwItems / 2),
 
               ///DETAILS
-              Padding(
-                padding: const EdgeInsets.only(left: TSizes.sm),
+              const Padding(
+                padding: EdgeInsets.only(left: TSizes.sm),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const ProductTitleText(
-                      title: "Green Nike Air Shoes",
-                      smallTitle: true,
+                    ProductTitleText(
+                        title: "Green Nike Air Shoes", smallTitle: true),
+                    SizedBox(height: TSizes.spaceBtwItems / 2),
+                    TitleWithVerifiedIcon(
+                      title: 'Nike',
                     ),
-                    const SizedBox(height: TSizes.spaceBtwItems / 2),
-                    Row(children: [
-                      Text(
-                        'Nike',
-                        overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      const SizedBox(width: TSizes.xs),
-                      const Icon(
-                        Iconsax.verify5,
-                        color: TColors.primary,
-                        size: TSizes.iconXs,
-                      )
-                    ]),
-                    // const Spacer(),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        const ProductPrice(
-                          price: '35',
-                          isLarge: true,
-                        ),
-                        Container(
-                          decoration: const BoxDecoration(
-                              color: TColors.dark,
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(TSizes.cardRadiusMd),
-                                bottomRight:
-                                    Radius.circular(TSizes.productImageRadius),
-                              )),
-                          child: const SizedBox(
-                            width: TSizes.iconLg * 1.2,
-                            height: TSizes.iconLg * 1.2,
-                            child: Center(
-                              child: Icon(Iconsax.add, color: TColors.white),
-                            ),
-                          ),
-                        )
-                      ],
-                    )
                   ],
                 ),
               ),
+              const Spacer(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Padding(
+                    padding: EdgeInsets.only(left: TSizes.sm),
+                    child: ProductPrice(
+                      price: '35',
+                      isLarge: true,
+                    ),
+                  ),
+                  Container(
+                    decoration: const BoxDecoration(
+                        color: TColors.dark,
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(TSizes.cardRadiusMd),
+                          bottomRight:
+                              Radius.circular(TSizes.productImageRadius),
+                        )),
+                    child: const SizedBox(
+                      width: TSizes.iconLg * 1.2,
+                      height: TSizes.iconLg * 1.2,
+                      child: Center(
+                        child: Icon(Iconsax.add, color: TColors.white),
+                      ),
+                    ),
+                  )
+                ],
+              )
             ],
           )),
     );
