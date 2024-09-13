@@ -46,7 +46,7 @@ class TImages {
   static const String product3 = "assets/images/products/product-slippers.png";
   static const String product4 = "assets/images/products/samsung_s9_mobile.png";
   static const String product5 = "assets/images/products/product-1.png";
-  static const String product6 = "assets/images/products/office_desk1.png";
+  static const String product6 = "assets/images/products/acer_laptop_var_1.png";
   static const String product7 = "assets/images/products/NikeAirMax.png";
   static const String product8 = "assets/images/products/leather_jacket_1.png";
 }
