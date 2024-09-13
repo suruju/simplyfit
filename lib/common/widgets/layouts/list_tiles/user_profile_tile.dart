@@ -5,8 +5,10 @@ import 'package:getfit/utils/constants/image_strings.dart';
 import 'package:iconsax/iconsax.dart';
 
 class UserProfileTile extends StatelessWidget {
+  final VoidCallback onPressed;
   const UserProfileTile({
     super.key,
+    required this.onPressed,
   });
 
   @override
@@ -27,7 +29,7 @@ class UserProfileTile extends StatelessWidget {
               .bodyMedium!
               .apply(color: TColors.white)),
       trailing: IconButton(
-          onPressed: () {},
+          onPressed: onPressed,
           icon: const Icon(
             Iconsax.edit,
             color: TColors.white,
