@@ -46,6 +46,7 @@ flutter:
     - assets/images/verify/
     - assets/images/banners/
     - assets/images/products/
+    - assets/images/avatar/
     - assets/icons/
     - assets/icons/categories/
     - assets/logos/

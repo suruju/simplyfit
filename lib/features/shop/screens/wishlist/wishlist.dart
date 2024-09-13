@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 import 'package:getfit/common/widgets/appbar/appbar.dart';
 import 'package:getfit/common/widgets/icons/circular_icons';
 import 'package:getfit/common/widgets/layouts/grid_layout.dart';
