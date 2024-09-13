@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:getfit/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:getfit/utils/constants/sizes.dart';
 
 class GridViewLayout extends StatelessWidget {

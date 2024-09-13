@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:getfit/utils/constants/colors.dart';
-import 'package:getfit/utils/constants/image_strings.dart';
 import 'package:getfit/utils/constants/sizes.dart';
 import 'package:getfit/utils/helpers/helper_functions.dart';
 

@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:getfit/common/widgets/appbar/appbar.dart';
 import 'package:getfit/common/widgets/appbar/tabbar.dart';
-import 'package:getfit/common/widgets/custom_shapes/container/rounded_container.dart';
 import 'package:getfit/common/widgets/custom_shapes/container/search_container.dart';
 import 'package:getfit/common/widgets/layouts/grid_layout.dart';
 import 'package:getfit/common/widgets/products.cart/cart_menu_icon.dart';
 import 'package:getfit/common/widgets/text/brand_card.dart';
-import 'package:getfit/common/widgets/text/brand_showcase.dart';
 import 'package:getfit/common/widgets/text/section_heading.dart';
 import 'package:getfit/features/shop/screens/store/widgets/category_tab_item.dart';
 import 'package:getfit/utils/constants/colors.dart';
-import 'package:getfit/utils/constants/image_strings.dart';
 import 'package:getfit/utils/constants/sizes.dart';
 import 'package:getfit/utils/helpers/helper_functions.dart';
 
